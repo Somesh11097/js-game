@@ -1,11 +1,19 @@
 let scoreEl = document.getElementById('score');
+
 let timeLeftEl = document.getElementById('timeLeft');
+
 let startNewGameButton = document.getElementById('startNewGame');
+
 let pauseGameButton = document.getElementById('pauseGame');
+
 let squares = document.querySelectorAll('.square');
+
 let grid =  document.getElementsByClassName('grid')[0];
+
 let gameMusic = new Audio('./assests/gameMusic.mp3');
+
 let hitMusic = new Audio('./assests/hitMusic.mp3');
+
 
 let score=0;
 let timeLeft=0;
@@ -93,4 +101,5 @@ squares.forEach(square =>{
     });
 })
 startNewGameButton.addEventListener('click',startGame);
+
 pauseGameButton.addEventListener('click', pauseResumeGame);
